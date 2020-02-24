@@ -10,17 +10,17 @@ function getValue(s,  source) {
 	return 0;
 }
 
-function main() {
-	let n = prompt("enter the no. for cases");
+function allienNumber() {
+	let n = prompt("enter the number for cases eg(1)");
 	n = parseInt(n)
 
 	for (let i = 0; i < n; i++) {
 		console.log( `Case # ${i+1}: `)
 
 		let number, source, target;
-        number = prompt("enter the number");
-        source = prompt("enter the source");
-        target = prompt("enter the target");
+        number = prompt("enter the number eg(9)");
+        source = prompt("enter the source eg(0123456789)");
+        target = prompt("enter the target eg(oF8)");
 
 		let sizeS = source.length;
 		let  sizeT = target.length;
@@ -41,7 +41,6 @@ function main() {
         ret = manipulateString(ret)
 
         console.log(ret)
-     //   console.log(endl)
 	}
 }
 
@@ -52,4 +51,4 @@ function manipulateString(str) {
     return str;
 }
 
-main();
+allienNumber();
